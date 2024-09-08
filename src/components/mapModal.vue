@@ -20,6 +20,7 @@
   
   export default {
     components: {
+      // eslint-disable-next-line vue/no-unused-components
       MapboxGL
     },
     props: {
