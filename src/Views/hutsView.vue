@@ -11,13 +11,13 @@
   
   <script>
   import HutFilter from '../components/HutFilter.vue';
-  import HutCard from '../components/HutCard.vue';
+  // import HutCard from '../components/HutCard.vue';
   import HutDetailsModal from '../components/HutDetailsModal.vue';
   
   export default {
     components: {
       HutFilter,
-      HutCard,
+      // HutCard,
       HutDetailsModal
     },
     data() {
@@ -33,20 +33,20 @@
     created() {
       this.filteredHuts = this.huts;
     },
-    methods: {
-      applyFilter(filters) {
-        this.filteredHuts = this.huts.filter(hut => {
-          // Implement filtering logic based on filters
-          return true; // Replace with your filtering logic
-        });
-      },
-      showHutDetails(hut) {
-        this.showHutDetailsModal = true;
-        this.selectedHut = hut;
-      },
-      closeHutDetailsModal() {
-        this.showHutDetailsModal = false;
-      }
-    }
+    // methods: {
+    //   applyFilter(filters) {
+    //     this.filteredHuts = this.huts.filter(hut => {
+    //       // Implement filtering logic based on filters
+    //       return true; // Replace with your filtering logic
+    //     });
+    //   },
+    //   showHutDetails(hut) {
+    //     this.showHutDetailsModal = true;
+    //     this.selectedHut = hut;
+    //   },
+    //   closeHutDetailsModal() {
+    //     this.showHutDetailsModal = false;
+    //   }
+    // }
   };
   </script>
