@@ -1,35 +1,35 @@
 <template>
     <div class="huts-page">
       <h1>Huts</h1>
-      <hut-filter @filter="applyFilter"></hut-filter>
+      <!-- <hut-filter @filter="applyFilter"></hut-filter>
       <div class="hut-list">
         <hut-card v-for="hut in filteredHuts" :key="hut.id" :hut="hut" @show-details="showHutDetails"></hut-card>
       </div>
-      <hut-details-modal v-if="showHutDetailsModal" :is-visible="showHutDetailsModal" :hut="selectedHut" @close="closeHutDetailsModal"></hut-details-modal>
+      <hut-details-modal v-if="showHutDetailsModal" :is-visible="showHutDetailsModal" :hut="selectedHut" @close="closeHutDetailsModal"></hut-details-modal> -->
     </div>
   </template>
   
   <script>
-  import HutFilter from '../components/HutFilter.vue';
+  // import HutFilter from '../components/HutFilter.vue';
   // import HutCard from '../components/HutCard.vue';
-  import HutDetailsModal from '../components/HutDetailsModal.vue';
+  // import HutDetailsModal from '../components/HutDetailsModal.vue';
   
   export default {
     components: {
-      HutFilter,
+      // HutFilter,
       // HutCard,
-      HutDetailsModal
+      // HutDetailsModal
     },
-    data() {
-      return {
-        huts: [
-          // ... your huts data
-        ],
-        filteredHuts: [],
-        showHutDetailsModal: false,
-        selectedHut: null
-      };
-    },
+    // data() {
+    //   return {
+    //     huts: [
+    //       // ... your huts data
+    //     ],
+    //     filteredHuts: [],
+    //     showHutDetailsModal: false,
+    //     selectedHut: null
+    //   };
+    // },
     created() {
       this.filteredHuts = this.huts;
     },

@@ -20,14 +20,19 @@
           </div>
       </section>
     </div>
+    <div>
+      <contact-form />
+    </div>
   </template>
   
   <script>
   import HeaderBar from '../components/HeaderBar.vue';
+  import contactForm from '../components/contactForm.vue';
   
   export default {
     components: {
-      HeaderBar
+      HeaderBar,
+      contactForm
     }
   };
   </script>

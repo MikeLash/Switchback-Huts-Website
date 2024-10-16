@@ -2,7 +2,11 @@
   <img src="./assets/hut.png">
   <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   <div id="app">
-    <home-Page-View />
+    <!-- <home-Page-View />
+    <huts-view /> -->
+    <!-- <header-bar /> -->
+    <home-page-view />
+    <!-- <huts-view /> -->
     <router-view />
   </div>
 </template>
@@ -10,12 +14,16 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import HomePageView from './Views/HomePageView.vue'
+// import hutsView from './Views/hutsView.vue'
+// import HeaderBar from './components/HeaderBar.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
-    HomePageView
+    HomePageView,
+    // hutsView,
+    // HeaderBar,
   }
 }
 </script>
